@@ -4,7 +4,7 @@ pipeline {
             label 'nodejs'
         }
     }
-     stage('Run Tests') {
+    stage('Run Tests') {
          parallel {
              stage('Backend Tests') {
                  steps {
@@ -17,5 +17,5 @@ pipeline {
                  }
              }
         }
-     }
+    }
 }
