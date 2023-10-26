@@ -4,7 +4,7 @@ pipeline {
             label 'nodejs'
         }
     }
-    statges {}
+    statges {
         stage('Run Tests') {
             parallel {
                 stage('Backend Tests') {
